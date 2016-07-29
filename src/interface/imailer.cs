@@ -15,8 +15,8 @@ along with this program.If not, see<http://www.gnu.org/licenses/>.
 
 using System;
 using System.Diagnostics;
-using OpenETaxBill.SDK.Configuration;
-using OpenETaxBill.SDK.Queue;
+using OdinSoft.SDK.Configuration;
+using OdinSoft.SDK.Queue;
 
 namespace OpenETaxBill.Channel.Interface
 {
@@ -49,18 +49,18 @@ namespace OpenETaxBill.Channel.Interface
         //-------------------------------------------------------------------------------------------------------------------------
         //
         //-------------------------------------------------------------------------------------------------------------------------
-        private OpenETaxBill.SDK.Communication.WcfProxy m_wcfProxy = null;
+        private OdinSoft.SDK.Communication.WcfProxy m_wcfProxy = null;
 
         /// <summary>
         /// 
         /// </summary>
-        public OpenETaxBill.SDK.Communication.WcfProxy Proxy
+        public OdinSoft.SDK.Communication.WcfProxy Proxy
         {
             get
             {
                 if (m_wcfProxy == null)
                 {
-                    m_wcfProxy = new OpenETaxBill.SDK.Communication.WcfProxy
+                    m_wcfProxy = new OdinSoft.SDK.Communication.WcfProxy
                         (
                         "Open-eTaxBill Mailing Service V1.0",               // Service Description
 
@@ -151,13 +151,13 @@ namespace OpenETaxBill.Channel.Interface
         //-------------------------------------------------------------------------------------------------------------------------
         //
         //-------------------------------------------------------------------------------------------------------------------------
-        private OpenETaxBill.SDK.Logging.QFileLog m_qfilelog = null;
-        private OpenETaxBill.SDK.Logging.QFileLog QFileLog
+        private OdinSoft.SDK.Logging.QFileLog m_qfilelog = null;
+        private OdinSoft.SDK.Logging.QFileLog QFileLog
         {
             get
             {
                 if (m_qfilelog == null)
-                    m_qfilelog = new OpenETaxBill.SDK.Logging.QFileLog();
+                    m_qfilelog = new OdinSoft.SDK.Logging.QFileLog();
 
                 return m_qfilelog;
             }

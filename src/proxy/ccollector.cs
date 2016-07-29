@@ -17,8 +17,8 @@ using System;
 using System.Data;
 using System.Diagnostics;
 using System.ServiceModel;
-using OpenETaxBill.SDK.Configuration;
-using OpenETaxBill.SDK.Queue;
+using OdinSoft.SDK.Configuration;
+using OdinSoft.SDK.Queue;
 
 namespace OpenETaxBill.Channel
 {
@@ -133,7 +133,7 @@ namespace OpenETaxBill.Channel
         // 
         //-------------------------------------------------------------------------------------------------------------------------
         private readonly static object SyncChannel = new object();
-        private OpenETaxBill.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfCollector.ICollectorService> m_wcf_client = null;
+        private OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfCollector.ICollectorService> m_wcf_client = null;
 
         /// <summary>
         /// 
@@ -159,7 +159,7 @@ namespace OpenETaxBill.Channel
                     {
 						ICollector.Proxy.SetClientPortSharing(WcfServiceIp);
 
-                        m_wcf_client = new OpenETaxBill.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfCollector.ICollectorService>
+                        m_wcf_client = new OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfCollector.ICollectorService>
                         (
                             this.BindingName,
                             ICollector.Proxy.ProductName, 

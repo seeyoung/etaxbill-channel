@@ -67,9 +67,9 @@
       <HintPath>..\packages\Mono.Security.3.2.3.0\lib\net45\Mono.Security.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OpenETaxBill.SDK, Version=4.5.2016.7, Culture=neutral, PublicKeyToken=642719c61e8023ed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\etaxbill-sdk\output\v1.0.2016.07\Debug\OpenETaxBill.SDK.dll</HintPath>
+    <Reference Include="OdinSoft.SDK.Lib, Version=1.0.2016.24545, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OdinSoft.SDK.Lib.1.0.0.0\lib\net45\OdinSoft.SDK.Lib.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -195,6 +195,8 @@
   <ItemGroup>
     <Content Include="library\security\issue\StripXmlNS.xslt" />
     <Content Include="library\security\issue\taxSchema.xml" />
+    <Content Include="odinsoft-sdk.ico" />
+    <Content Include="odinsoft-sdk.png" />
     <None Include="Service References\WcfResponsor\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
