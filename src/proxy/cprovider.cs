@@ -132,12 +132,12 @@ namespace OpenETaxBill.Channel
         // 
         //-------------------------------------------------------------------------------------------------------------------------
         private readonly static object SyncChannel = new object();
-        private OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfProvider.IProviderService> m_wcf_client = null;
+        private OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.WcfProvider.IProviderService> m_wcf_client = null;
 
         /// <summary>
         /// 
         /// </summary>
-        private OpenETaxBill.Channel.WcfProvider.IProviderService WcfClient
+        private OpenETaxBill.WcfProvider.IProviderService WcfClient
         {
             get
             {
@@ -158,7 +158,7 @@ namespace OpenETaxBill.Channel
                     {
                         IProvider.Proxy.SetClientPortSharing(WcfServiceIp);
 
-                        m_wcf_client = new OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfProvider.IProviderService>
+                        m_wcf_client = new OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.WcfProvider.IProviderService>
                         (
                             this.BindingName,
                             IProvider.Proxy.ProductName,

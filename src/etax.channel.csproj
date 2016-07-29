@@ -8,7 +8,7 @@
     <ProjectGuid>{AB03197A-E0AC-41A9-B018-533FE6E5CA9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenETaxBill.Channel</RootNamespace>
+    <RootNamespace>OpenETaxBill</RootNamespace>
     <AssemblyName>OpenETaxBill.Channel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

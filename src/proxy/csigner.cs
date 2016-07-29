@@ -132,12 +132,12 @@ namespace OpenETaxBill.Channel
         // 
         //-------------------------------------------------------------------------------------------------------------------------
         private readonly static object SyncChannel = new object();
-        private OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfSigner.ISignerService> m_wcf_client = null;
+        private OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.WcfSigner.ISignerService> m_wcf_client = null;
 
         /// <summary>
         /// 
         /// </summary>
-        private OpenETaxBill.Channel.WcfSigner.ISignerService WcfClient
+        private OpenETaxBill.WcfSigner.ISignerService WcfClient
         {
             get
             {
@@ -158,7 +158,7 @@ namespace OpenETaxBill.Channel
                     {
 						ISigner.Proxy.SetClientPortSharing(WcfServiceIp);
 
-                        m_wcf_client = new OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.Channel.WcfSigner.ISignerService>(
+                        m_wcf_client = new OdinSoft.SDK.Communication.WcfClient<OpenETaxBill.WcfSigner.ISignerService>(
                             this.BindingName,
                             ISigner.Proxy.ProductName, 
                             WcfServiceIp, 
