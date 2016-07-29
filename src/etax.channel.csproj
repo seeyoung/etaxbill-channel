@@ -12,8 +12,9 @@
     <AssemblyName>OpenETaxBill.Channel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>etax.channel.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -59,16 +60,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Security.3.2.3.0\lib\net45\Mono.Security.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="OdinSoft.SDK.Lib, Version=1.0.2016.27139, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OdinSoft.SDK.Lib.1.0.0.3\lib\net45\OdinSoft.SDK.Lib.dll</HintPath>
+    <Reference Include="OdinSoft.SDK.Lib, Version=1.0.2016.29019, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OdinSoft.SDK.Lib.1.0.0.4\lib\net45\OdinSoft.SDK.Lib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -98,57 +91,8 @@
     <Compile Include="interface\ireporter.cs" />
     <Compile Include="interface\iresponsor.cs" />
     <Compile Include="interface\isigner.cs" />
-    <Compile Include="library\net\core\FixedStack.cs" />
-    <Compile Include="library\net\core\ParamParser.cs" />
-    <Compile Include="library\net\dns\DnsAnswer.cs" />
-    <Compile Include="library\net\dns\DnsAnswers.cs" />
-    <Compile Include="library\net\dns\DnsCache.cs" />
-    <Compile Include="library\net\dns\DnsEnums.cs" />
-    <Compile Include="library\net\dns\DnsEx.cs" />
-    <Compile Include="library\net\dns\DnsHeader.cs" />
-    <Compile Include="library\net\dns\DnsQuery.cs" />
-    <Compile Include="library\net\dns\MxRecord.cs" />
-    <Compile Include="library\net\mime\Attachment.cs" />
-    <Compile Include="library\net\mime\Attachments.cs" />
-    <Compile Include="library\net\mime\MimeConstructor.cs" />
-    <Compile Include="library\net\mime\Parser\eAddress.cs" />
-    <Compile Include="library\net\mime\Parser\MimeEntry.cs" />
-    <Compile Include="library\net\mime\Parser\MimeParser.cs" />
-    <Compile Include="library\net\NetCore.cs" />
-    <Compile Include="library\net\ReadException.cs" />
-    <Compile Include="library\net\smtp\BodyType.cs" />
-    <Compile Include="library\net\smtp\client\SmtpError.cs" />
-    <Compile Include="library\net\smtp\server\CommandValidator.cs" />
-    <Compile Include="library\security\encrypt\CmsManager.cs" />
-    <Compile Include="library\security\encrypt\Encryptor.cs" />
-    <Compile Include="library\security\encrypt\tDESCrypto.cs" />
-    <Compile Include="library\security\issue\Convertor.cs" />
-    <Compile Include="library\security\issue\Reader.cs" />
-    <Compile Include="library\security\issue\Schema.cs" />
-    <Compile Include="library\security\issue\Validator.cs" />
-    <Compile Include="library\security\issue\Writer.cs" />
-    <Compile Include="library\security\mime\MimeContent.cs" />
-    <Compile Include="library\security\mime\MimeParser.cs" />
-    <Compile Include="library\security\mime\MimePart.cs" />
-    <Compile Include="library\security\notice\envelope.cs" />
-    <Compile Include="library\security\notice\packing.cs" />
-    <Compile Include="library\security\notice\request.cs" />
-    <Compile Include="library\security\signature\SeedCs.cs" />
-    <Compile Include="library\security\signature\X509CertMgr.cs" />
-    <Compile Include="library\security\signature\XSignature.cs" />
-    <Compile Include="library\utility\ProxyException.cs" />
     <Compile Include="proxy\csigner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
     <Compile Include="proxy\creporter.cs" />
     <Compile Include="proxy\cresponsor.cs" />
     <Compile Include="proxy\cmailer.cs" />
@@ -186,15 +130,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="library\security\issue\StripXmlNS.xslt" />
-    <Content Include="library\security\issue\taxSchema.xml" />
+    <None Include="packages.config" />
     <None Include="Service References\WcfResponsor\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -269,18 +205,7 @@
     </None>
     <None Include="Service References\WcfCollector\configuration.svcinfo" />
     <None Include="Service References\WcfCollector\configuration91.svcinfo" />
-    <None Include="packages.config" />
-    <None Include="Resources\taxschema.xml" />
     <None Include="app.config" />
-    <None Include="etax.channel.snk" />
-    <Content Include="library\security\encrypt\initVector.bin" />
-    <Content Include="library\security\encrypt\privateKey.bin" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Resources\initvector.bin" />
-    <None Include="Resources\privatekey.bin" />
     <None Include="Service References\WcfCollector\CollectService.wsdl" />
     <None Include="Service References\WcfCollector\OpenTAX_Collector_V10.wsdl" />
     <None Include="Service References\WcfCollector\OpenTAX_Collector_V10.xsd">
