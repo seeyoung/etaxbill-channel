@@ -60,8 +60,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OdinSoft.SDK.OdinLib, Version=1.0.2016.24057, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OdinSoft.SDK.OdinLib.1.0.0.0\lib\net45\OdinSoft.SDK.OdinLib.dll</HintPath>
+    <Reference Include="OdinSoft.SDK.OdinLib, Version=1.0.2016.33566, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OdinSoft.SDK.OdinLib.1.0.0.3\lib\net45\OdinSoft.SDK.OdinLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
