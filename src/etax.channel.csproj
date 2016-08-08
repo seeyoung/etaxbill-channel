@@ -60,10 +60,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OdinSoft.SDK.OdinLib, Version=1.0.2016.33566, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OdinSoft.SDK.OdinLib.1.0.0.3\lib\net45\OdinSoft.SDK.OdinLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -130,7 +126,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Service References\WcfResponsor\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -256,6 +251,12 @@
     <WCFMetadataStorage Include="Service References\WcfReporter\" />
     <WCFMetadataStorage Include="Service References\WcfResponsor\" />
     <WCFMetadataStorage Include="Service References\WcfSigner\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\odinsoft-git\public\open-sdk\src\odinlib\odinlib.csproj">
+      <Project>{22054587-58bb-4553-a0d8-f852cc1fa8c8}</Project>
+      <Name>odinlib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
