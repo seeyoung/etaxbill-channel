@@ -25,8 +25,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "logo-files", "logo-files", 
 		logo-files\etaxbill3.png = logo-files\etaxbill3.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "odinlib", "..\..\..\odinsoft-git\public\open-sdk\src\odinlib\odinlib.csproj", "{22054587-58BB-4553-A0D8-F852CC1FA8C8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,16 +35,11 @@ Global
 		{AB03197A-E0AC-41A9-B018-533FE6E5CA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB03197A-E0AC-41A9-B018-533FE6E5CA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB03197A-E0AC-41A9-B018-533FE6E5CA9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22054587-58BB-4553-A0D8-F852CC1FA8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22054587-58BB-4553-A0D8-F852CC1FA8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22054587-58BB-4553-A0D8-F852CC1FA8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22054587-58BB-4553-A0D8-F852CC1FA8C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AB03197A-E0AC-41A9-B018-533FE6E5CA9F} = {44B071F3-8060-419B-9C83-21805C0D30D6}
-		{22054587-58BB-4553-A0D8-F852CC1FA8C8} = {44B071F3-8060-419B-9C83-21805C0D30D6}
 	EndGlobalSection
 EndGlobal

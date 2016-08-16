@@ -60,6 +60,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OdinSoft.SDK.OdinLib, Version=1.0.2016.32764, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\odinsoft-git\public\open-sdk\output\v1.0.2016.07\Debug\OdinSoft.SDK.OdinLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -251,12 +255,6 @@
     <WCFMetadataStorage Include="Service References\WcfReporter\" />
     <WCFMetadataStorage Include="Service References\WcfResponsor\" />
     <WCFMetadataStorage Include="Service References\WcfSigner\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\odinsoft-git\public\open-sdk\src\odinlib\odinlib.csproj">
-      <Project>{22054587-58bb-4553-a0d8-f852cc1fa8c8}</Project>
-      <Name>odinlib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
