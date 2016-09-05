@@ -8,127 +8,110 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OpenETaxBill.WcfCollector
-{
-
-
+namespace OpenETaxBill.WcfCollector {
+    
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07", ConfigurationName = "WcfCollector.ICollectorService")]
-    public interface ICollectorService
-    {
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
-            "riteLog", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07", ConfigurationName="WcfCollector.ICollectorService")]
+    public interface ICollectorService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
+            "riteLog", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
             "riteLogResponse")]
         void WriteLog(System.Guid p_certapp, string p_exception, string p_message);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
-            "riteLog", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
+            "riteLog", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/W" +
             "riteLogResponse")]
         System.Threading.Tasks.Task WriteLogAsync(System.Guid p_certapp, string p_exception, string p_message);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
-            "oExcelUpload", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
+            "oExcelUpload", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
             "oExcelUploadResponse")]
         bool DoExcelUpload(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
-            "oExcelUpload", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
+            "oExcelUpload", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/D" +
             "oExcelUploadResponse")]
         System.Threading.Tasks.Task<bool> DoExcelUploadAsync(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
-            "etIssueId", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+            "etIssueId", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
             "etIssueIdResponse")]
         string GetIssueId(System.Guid p_certapp, System.DateTime p_createDate);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
-            "etIssueId", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+            "etIssueId", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
             "etIssueIdResponse")]
         System.Threading.Tasks.Task<string> GetIssueIdAsync(System.Guid p_certapp, System.DateTime p_createDate);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
-            "etCfgValue", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+            "etCfgValue", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
             "etCfgValueResponse")]
         string GetCfgValue(System.Guid p_certapp, string p_appkey, string p_default);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
-            "etCfgValue", ReplyAction = "http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
+            "etCfgValue", ReplyAction="http://www.odinsoftware.co.kr/open/etaxbill/collector/2016/07/ICollectorService/G" +
             "etCfgValueResponse")]
         System.Threading.Tasks.Task<string> GetCfgValueAsync(System.Guid p_certapp, string p_appkey, string p_default);
     }
-
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ICollectorServiceChannel : OpenETaxBill.WcfCollector.ICollectorService, System.ServiceModel.IClientChannel
-    {
+    public interface ICollectorServiceChannel : OpenETaxBill.WcfCollector.ICollectorService, System.ServiceModel.IClientChannel {
     }
-
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CollectorServiceClient : System.ServiceModel.ClientBase<OpenETaxBill.WcfCollector.ICollectorService>, OpenETaxBill.WcfCollector.ICollectorService
-    {
-
-        public CollectorServiceClient()
-        {
+    public partial class CollectorServiceClient : System.ServiceModel.ClientBase<OpenETaxBill.WcfCollector.ICollectorService>, OpenETaxBill.WcfCollector.ICollectorService {
+        
+        public CollectorServiceClient() {
         }
-
-        public CollectorServiceClient(string endpointConfigurationName) :
-                base(endpointConfigurationName)
-        {
+        
+        public CollectorServiceClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
         }
-
-        public CollectorServiceClient(string endpointConfigurationName, string remoteAddress) :
-                base(endpointConfigurationName, remoteAddress)
-        {
+        
+        public CollectorServiceClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
         }
-
-        public CollectorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
-                base(endpointConfigurationName, remoteAddress)
-        {
+        
+        public CollectorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
         }
-
-        public CollectorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
-                base(binding, remoteAddress)
-        {
+        
+        public CollectorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
         }
-
-        public void WriteLog(System.Guid p_certapp, string p_exception, string p_message)
-        {
+        
+        public void WriteLog(System.Guid p_certapp, string p_exception, string p_message) {
             base.Channel.WriteLog(p_certapp, p_exception, p_message);
         }
-
-        public System.Threading.Tasks.Task WriteLogAsync(System.Guid p_certapp, string p_exception, string p_message)
-        {
+        
+        public System.Threading.Tasks.Task WriteLogAsync(System.Guid p_certapp, string p_exception, string p_message) {
             return base.Channel.WriteLogAsync(p_certapp, p_exception, p_message);
         }
-
-        public bool DoExcelUpload(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy)
-        {
+        
+        public bool DoExcelUpload(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy) {
             return base.Channel.DoExcelUpload(p_certapp, p_uploadTable, p_createdBy);
         }
-
-        public System.Threading.Tasks.Task<bool> DoExcelUploadAsync(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy)
-        {
+        
+        public System.Threading.Tasks.Task<bool> DoExcelUploadAsync(System.Guid p_certapp, System.Data.DataTable p_uploadTable, string p_createdBy) {
             return base.Channel.DoExcelUploadAsync(p_certapp, p_uploadTable, p_createdBy);
         }
-
-        public string GetIssueId(System.Guid p_certapp, System.DateTime p_createDate)
-        {
+        
+        public string GetIssueId(System.Guid p_certapp, System.DateTime p_createDate) {
             return base.Channel.GetIssueId(p_certapp, p_createDate);
         }
-
-        public System.Threading.Tasks.Task<string> GetIssueIdAsync(System.Guid p_certapp, System.DateTime p_createDate)
-        {
+        
+        public System.Threading.Tasks.Task<string> GetIssueIdAsync(System.Guid p_certapp, System.DateTime p_createDate) {
             return base.Channel.GetIssueIdAsync(p_certapp, p_createDate);
         }
-
-        public string GetCfgValue(System.Guid p_certapp, string p_appkey, string p_default)
-        {
+        
+        public string GetCfgValue(System.Guid p_certapp, string p_appkey, string p_default) {
             return base.Channel.GetCfgValue(p_certapp, p_appkey, p_default);
         }
-
-        public System.Threading.Tasks.Task<string> GetCfgValueAsync(System.Guid p_certapp, string p_appkey, string p_default)
-        {
+        
+        public System.Threading.Tasks.Task<string> GetCfgValueAsync(System.Guid p_certapp, string p_appkey, string p_default) {
             return base.Channel.GetCfgValueAsync(p_certapp, p_appkey, p_default);
         }
     }
